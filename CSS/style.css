@@ -1,0 +1,447 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #222222;
+    --text-color: #333;
+    --font-size: 16px;
+}
+
+* {
+    box-sizing: inherit;
+}
+ 
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: antiquewhite;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+.header-left-logo img{
+    width: 50px;
+}
+.header-left{
+    display: flex;
+    justify-content: space-between;
+}
+.header-left-list{
+    border: solid 1px #151B26;
+}
+.size_container{
+    width: 1300px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;  
+}
+.header__navbar-list{
+
+}
+
+.header__navbar-item,
+.header__navbar-item-link
+{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 77px;
+    padding-left: 20px;
+
+}
+.logo img{
+    max-width: 50px;
+    max-height: 50px;
+}
+.iok{
+    display: block;
+}
+
+
+.container__banner img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 42px;
+    border-radius: 20px;
+}
+.text__header_and_text--all{
+    font-size: var(--font-size);
+    line-height: 40px;
+    margin-top: 24px;
+}
+
+.wellcome__lux{
+
+}
+.wellcome__lux--heading{
+    font-size: 28px;
+    margin-top: 56px;
+}
+.wellcome__lux--text{
+
+}
+.famous__place{
+    margin-bottom: 200px;
+
+}
+
+/* Địa điểm */
+.container__place-list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.place-item{
+    margin-left: -16px;
+}
+
+.container__list-place--img{
+    margin-top: 15px;
+    margin-left: 16px;
+    margin-bottom: 30px;
+    width: 247px;
+    height: 308px;
+    border-radius: 3px;
+    
+}
+.container__list-image-body{
+    margin: -116px 56px;
+    
+}
+.container__list-image-body--heading{
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-bottom: 16px;
+}
+.container__list-image-body--text{
+    font-size: 16px;
+    color: #FFFFFFE6;
+}
+
+/* Ưu đãi độc quyền */
+.luxstay__sale{
+
+
+}
+.luxstay__sale-title-p{
+    display: flex;
+    justify-content: space-between;
+
+}
+.link_more{
+    color: #f65e39;
+    text-decoration: none;
+}
+.luxstay__sale-list{
+    display: flex;
+    justify-content: space-between;
+
+}
+.luxstay__sale-list-item-img{
+    width: 422px;
+    height: 185px;
+    border-radius: 3px;
+    margin-left: 16px;
+
+}
+.luxstay__sale-list-item{
+    margin-left: -16px;
+}
+
+/* Gợi ý từ Luxstay */
+.luxstay__suggestions-list{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -16px;
+}
+.luxstay__suggestions-list-item{
+    margin-left: 16px;
+
+}
+.luxstay__suggestions-list-item--img{
+    width: 312px;
+    height: 195px;
+    border-radius: 1px;
+
+}
+.luxstay__suggestions-list-item-body--h3{
+    color: #555555;
+    font-size: 12px;
+    padding: 8px 0px;
+}
+.luxstay__suggestions-list-item-body--p{
+    color: #151B26;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Gợi ý từ khám phá */
+.discover__suggestions-list{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -16px;
+
+}
+.discover__suggestions-list-item--img{
+    width: 422px;
+    height: 244px;
+}
+.discover__suggestions-list-item{
+    margin-left: 16px;
+}
+.discover__suggestions-list-item-body{
+    position: relative;
+}
+.discover__suggestions-list-item-body--button{
+    position: absolute;
+    margin: 30px 0px 0px 30px;
+    padding: 3px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+.discover__suggestions-list-item-body--p{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 190px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 1;
+    
+}
+
+ /* Hướng dẫn sử dụng */
+.user__manual-list{
+    display: flex;
+    justify-content: space-between;
+}
+.user__manual-list-item--img{
+    width: 248px;
+    height: 134px;
+    border-radius: 3px;
+
+}
+
+/* Tìm kiếm chỗ ở giá tốt nhất */
+.luxstay__search{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.luxstay__search-left-logotext--image{
+    margin-bottom: 20px;
+
+}
+.luxstay__search-left-logotext--text{
+    font-size: 50px;
+}
+.luxstay__search-left-title--h1{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.luxstay__search-left-text--p{
+    font-size: 16px;
+    padding: 30px 0;
+    line-height: 1.4;
+}
+.luxstay__search-left-QR--img{
+    width: 154px;
+    height: 154px;
+    padding: 12px;
+    border: solid 1px rgba(0, 0, 0, 0.1) ;
+}
+.luxstay__search-left_QR_APP{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.luxstay__search-left-APP--img{
+    margin-left: 45px;
+    margin-bottom: 30px;
+
+}
+.luxstay__search-right-image-demo-app{
+    width: 640px;
+    height: 590px;
+}
+
+
+/* LUXSTAY Messenger ... */
+.footer_header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+.footer_header-logo{
+    width: 180px;
+}
+.messenger{
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
+
+}
+.messenger-p{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+.messenger-a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.call_center{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.call_center a{
+    text-decoration: none;
+    color: black;
+}
+.call_center--p{
+    font-weight: bold;
+}
+.footer_header-mes-call{
+}
+.footer_header-mes-call--img{
+    width: 50px;
+}
+.footer_header-col1--h3{
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer_header-mes-call--a{
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.footer_header-col1--ul>li>a{
+    font-size: 14px;
+    line-height: 2;
+    text-decoration: none;
+    color: black;
+
+}
+.app_download{
+    display: flex;
+    justify-content: space-between;
+}
+.app_download-left--QR{
+    width: 80px;
+    padding: 12px;
+    border: solid 1px rgba(0, 0, 0, 0.1) ;
+}
+.app_download-right{
+    display: flex;
+    flex-direction: column;
+}
+.app_download-right img{
+    width: 106px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+/* VISA */
+.footer_brand{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+}
+.footer_brand-left{
+    width: 40%;
+    margin-left: 264px;  
+}
+.footer_brand-center{
+    width: 20%;
+    margin-left: 18px;
+}
+.footer_brand-right{
+    width: 10%;
+    margin-left: 30px;
+}
+.footer_brand-left-image img{
+    margin: 0px 10px;
+}
+.footer_brand-center-image img{
+    margin: 0px 8px;
+}
+.footer_brand-right{
+    display: inline-block;
+}
+/* FOOTER */
+.footer{
+    border-top: solid 0.1px rgb(190, 189, 189);
+
+
+}
+.footer--p{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(121, 115, 115);
+    line-height: 1.6;
+    margin: 20px 0px;
+}
+.footer--a{
+    text-decoration: none;
+}
